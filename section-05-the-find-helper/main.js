@@ -58,3 +58,31 @@ function postForComment(post, comment) {
 }
 
 console.log(postForComment(posts, comment));
+
+
+// Exercise 9
+var users = [
+  { id: 1, admin: false },
+  { id: 2, admin: false },
+  { id: 3, admin: true }
+];
+
+var admin;
+
+admin = users.find(function (user) {
+    return user.admin === true;
+})
+
+// Exercise 10
+var accounts = [
+  { balance: -10 },
+  { balance: 12 },
+  { balance: 0 }
+];
+
+var account;
+
+account = accounts.find(function (account) {
+    return account.balance === 12;
+})
+
